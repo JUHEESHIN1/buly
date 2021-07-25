@@ -1,0 +1,619 @@
+@charset "utf-8";
+
+#wrap {
+    width: 100%;
+    min-width: 1280px;
+}
+
+.inner {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* -------------------aside-------------------- */
+
+input[id=btn] {
+    display: none;
+}
+
+input[id=btn_2] {
+    display: none;
+}
+
+input[id=btn_3] {
+    display: none;
+}
+
+input[id=btn_4] {
+    display: none;
+}
+
+input[id=btn_5]
+{display:none;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* --- */
+.close input {
+    display: none;
+}
+
+.close label {
+    display: block;
+    width: 40px;
+    height: 30px;
+    /* border:1px solid blue; */
+    position:fixed;
+    left:-40px;
+    z-index: 10000;
+    top:20px;
+}
+
+.close label span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.close label span:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%) rotate(45deg); 
+}
+
+.close label span:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%) rotate(-45deg); 
+}
+
+
+/* --close2-- */
+.close2 input {
+    display: none;
+}
+
+.close2 label {
+    display: block;
+    width: 40px;
+    height: 30px;
+    /* border:1px solid blue; */
+    position:fixed;
+    left:-40px;
+    z-index: 10000;
+    top:20px;
+}
+
+.close2 label span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.close2 label span:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%) rotate(45deg); 
+}
+
+.close2 label span:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%) rotate(-45deg); 
+}
+/* ---- */
+.close3 input {
+    display: none;
+}
+
+.close3 label {
+    display: block;
+    width: 40px;
+    height: 30px;
+    /* border:1px solid blue; */
+    position:fixed;
+    left:-40px;
+    z-index: 10000;
+    top:20px;
+}
+
+.close3 label span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.close3 label span:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%) rotate(45deg); 
+}
+
+.close3 label span:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%) rotate(-45deg); 
+}
+/* ---- */
+.close4 input {
+    display: none;
+}
+
+.close4 label {
+    display: block;
+    width: 40px;
+    height: 30px;
+    /* border:1px solid blue; */
+    position:fixed;
+    left:-40px;
+    z-index: 10000;
+    top:20px;
+}
+
+.close4 label span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.close4 label span:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%) rotate(45deg); 
+}
+
+.close4 label span:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%) rotate(-45deg); 
+}
+/* ---- */
+
+aside .side_bar {
+    position: fixed;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    left: -500px;
+    background-color: rgb(2, 7, 0);
+    z-index: 1000;
+    transition: all .3s;
+}
+
+aside .side_bar_2 {
+    position: fixed;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    left: -500px;
+    background-color: rgb(2, 7, 0);
+    z-index: 1000;
+    transition: all .3s;
+}
+
+aside .side_bar_3 {
+    position: fixed;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    left: -500px;
+    background-color: rgb(2, 7, 0);
+    z-index: 1000;
+    transition: all .3s;
+}
+
+aside .side_bar_4 {
+    position: fixed;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    left: -500px;
+    background-color: rgb(2, 7, 0);
+    z-index: 1000;
+    transition: all .3s;
+}
+
+aside .side_bar_bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    z-index: 100;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.sidemenu {
+    font-size: 30pt;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 40px;
+    color: white;
+}
+
+.sidemenu .sidemenuin {
+    font-size: 20pt;
+    font-weight: normal;
+    margin-top: 30px;
+    line-height: 50px;
+    color: rgb(134, 134, 134)
+}
+
+/* ------checked--------- */
+aside input[id=btn]:checked+.side_bar {
+    left: 0;
+}
+
+aside input[id=btn]:checked~.close label{
+    left:510px;
+}
+
+aside input[id=btn_2]:checked+.side_bar_2 {
+    left: 0;
+}
+
+aside input[id=btn_2]:checked~.close2 label{
+    left:510px;
+}
+
+aside input[id=btn_3]:checked+.side_bar_3 {
+    left: 0;
+}
+
+aside input[id=btn_3]:checked~.close3 label{
+    left:510px;
+}
+
+aside input[id=btn_4]:checked+.side_bar_4 {
+    left: 0;
+}
+
+aside input[id=btn_4]:checked~.close4 label{
+    left:510px;
+}
+
+aside input[id=btn]:checked+label[for=btn] span {
+    background-color: white;
+}
+
+
+aside input[id=btn]:checked~.side_bar {
+    left: 0;}
+
+
+
+aside input[id=btn]:checked~.side_bar_bg {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+aside input[id=btn_2]:checked~.side_bar_bg {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+aside input[id=btn_3]:checked~.side_bar_bg {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+aside input[id=btn_4]:checked~.side_bar_bg {
+    opacity: 0.7;
+    visibility: visible;
+}
+/* --- */
+
+aside input[id=btn]:checked + label[for=btn_5]{left:510px;}
+
+aside input[id=btn]:checked + label[for=btn_5] span{background-color:white;}
+
+aside input[id=btn_5]:checked + label[for=btn_5] span:nth-child(1){
+transform: rotate(45deg) translateY(-50%);
+top:50%
+}
+aside input[id=btn]:checked + label[for=btn] span:nth-child(3){
+transform:rotate(-45deg) translateY(50%);
+bottom:50%;
+}
+
+
+/* ----------------------header--------------------------- */
+body {
+    background-color: rgb(29, 29, 29);
+
+}
+
+header {
+    background-size: 100%;
+    height: 713px;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-bottom: 80px;
+    position: absolute;
+}
+
+header .sticker {
+    width: 100%;
+}
+
+header .a {
+    background-color: rgb(15, 15, 15);
+    padding: 10px 0px;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+nav .menu {
+    color: black
+}
+
+nav .menu .bmenu {
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.rmenu {
+    float: right;
+    margin-top: 30px;
+}
+
+.rmenu a {
+    margin-right: 20px;
+}
+
+.rmenua {
+    margin: 0;
+}
+
+.logo {
+    float: left;
+
+}
+
+/* ----------------------section1---------------------------- */
+
+.bpro .pro {
+    float: left;
+    margin-bottom: 100px;
+    width: calc(100% / 4)
+}
+
+.ess {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.bpro .pro .img {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    opacity: 100;
+    transition: 0.5s;
+}
+
+.bpro .pro:hover .img {
+    opacity: 0.5;
+}
+
+.pro .proinfo {
+    padding-right: 18px;
+    text-align: center;
+
+}
+
+
+.pro .proinfo .binfo {
+    font-size: 14pt;
+    /* font-weight:bold; */
+    color: white;
+}
+
+.pro .proinfo .sinfo {
+    font-size: 10pt;
+    color: rgb(131, 131, 131);
+}
+
+.stickersec {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.stickersec img {
+    width: 100%
+}
+
+
+/* -----------------------section2----------------------------- */
+.content_2 div img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.div {
+    position: relative;
+}
+
+/* .content_1 .arr_left {
+    top: 1020px;
+    left: 0;
+    position: absolute;
+    margin-left: 200px;
+}
+
+.content_1 .arr_right {
+    top: 1020px;
+    right: 0;
+    position: absolute;
+    margin-right: 200px;
+} */
+
+/* -----------------------section2----------------------- */
+
+/* .content_2 {
+    margin-bottom: 100px;
+} */
+
+.section_1 input {
+    display: none;
+}
+
+.section_1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section_1 .page {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.section_1 .page>label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(114, 114, 114);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.section_1 input[id=tab_btn_1]:checked~.page label[for=tab_btn_1],
+.section_1 input[id=tab_btn_2]:checked~.page label[for=tab_btn_2] {
+    background-color: #ffffff;
+}
+
+.section_1 .bg {
+    position: relative;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+
+}
+
+.section_1 .bg>div {
+    width: calc(100% / 2);
+    height: 100%;
+    float: left;
+}
+
+.section_1 .bg>div img {
+    width: 100%;
+
+}
+
+.section_1 input[id=tab_btn_1]:checked~.bg {
+    left: 0;
+}
+
+.section_1 input[id=tab_btn_2]:checked~.bg {
+    left: -100%;
+}
+
+/* ------------------------section3----------------------------- */
+.content_3 {
+    margin-top: 100px;
+    color: white;
+}
+
+.stored {
+    float: left;
+    width:carc(50% - 50px);
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 30pt;
+    box-sizing: border-box;
+}
+
+.store {
+    margin-bottom: 30px;
+}
+
+.stored p {
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+.stored a {
+   float:right;
+   margin-right:10px;
+}
+
+.branch {
+    float: right;
+    width: 50%;
+}
+.branch img{width:100%}
+
+.branch p {
+    margin-top: 10px;
+}
+
+/* }------------------------footer----------------------- */
+
+footer {
+    background-image: url(../images/navi\ box.png);
+    height: 200px;
+    margin-top: 100px;
+    color: white;
+}
+
+footer .nav .ul1 .li1 input {
+    background: none;
+    border: 1px solid white;
+}
+
+.nav .navipng {
+    width: 100%;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav ul {
+    display: inline-block;
+}
+
+.nav li {
+    float: left;
+    text-align: center;
+    margin-right: 150px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.nav .li1 {
+    padding-bottom: 40px;
+}
+
+.nav .li3 {
+    padding-bottom: 80px;
+}
+
+/* .sec_1 .member ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} */

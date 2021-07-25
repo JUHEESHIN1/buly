@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    clear: both;
+}
+
+#wrap {
+    width: 100%;
+    min-width: 1280px;
+}
+
+.inner {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.delivery {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 9pt;
+}
+
+.delivery a {
+    color: white;
+}
+
+
+/* --------------------header--------------------- */
+header {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(33, 33, 33);
+    padding-top: 30px;
+}
+
+header .nav1 {
+    float: left;
+}
+
+header .nav1 li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header .nav1 li a {
+    color: white;
+}
+
+header .nav2 {
+    float: right;
+}
+
+header .nav2 li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header .nav2 li a {
+    color: white;
+}
+
+/* ----------------sec1----------------------- */
+
+.logo img {
+    float: left;
+}
+
+.sec1 {
+    width: 100%;
+    height: 160px;
+    background-color: rgb(33, 33, 33);
+
+}
+
+/* ----------------sec2 */
+
+
+.sec2 {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(33, 33, 33);
+}
+
+.sec2 .product {
+    padding-top: 100px;
+    position: relative;
+}
+
+.sec2 .product .productleft {
+    width: 100%;
+    position: absolute;
+    padding-left: 400px;
+}
+
+.sec2 .product .productleft img {
+    display: block;
+}
+
+.sec2 .product .productright {
+    position: absolute;
+    width: 550px;
+    color: white;
+    padding-left: 900px;
+    padding-top: 30px;
+}
+
+.sec2 .product .productright h1 {
+    font-size: 28px;
+}
+
+.sec2 .product .productright h3 {
+    font-size: 20px;
+}
+
+.sec2 .product .productright h4 {
+    font-size: 14px;
+}
+
+.sec2 .product .productright .button {
+    margin-right: 10px;
+}
+
+/* ------------------sec3---------------------------- */
+
+.sec3 {
+    width: 100%;
+    height: 1215px;
+    background-color: rgb(162, 162, 162);
+}
+
+.sec3 .explainimg{
+    float: left;
+}
+
+.sec3 .explain {
+    width: 50%;
+    height: 1215px;
+    background-image: url(../images/background\ green.png);
+    float: right;
+    top: 0;
+    color:white;
+}
+
+/* --------------sec4----------- */
+.sec4{
+    width:100%;
+    height:910px;
+    background-color: rgb(33, 33, 33);
+}
